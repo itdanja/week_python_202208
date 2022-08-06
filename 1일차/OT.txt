@@ -1,0 +1,52 @@
+자료구조 / 알고리즘 ___ 
+	- 8회차 [ 토/일(4) ]
+	- 파이썬 [ 별도 교재 X ]
+	- 수업 자료 / 강의 코드 [ 공유 ]
+		- 카카오톡 : https://open.kakao.com/o/gie0j3te
+		- 오픈채팅 검색 : 코리아IT주말 파이썬
+		- GITHUB :  https://github.com/itdanja/week_python_202208
+		- 질문 : 카카오톡 / 비대면 : 애니데스크(원격)
+	- 수업 준비 
+		- 파이썬 설치 
+		[ https://www.python.org/downloads/ ] 
+		- 파이참 사용 [ 코드 에디터( IDE) ]
+		[ https://www.jetbrains.com/ko-kr/pycharm/download ]
+
+	- 수업 규칙
+		1. 타자 느린 분들 : 1.듣기 -> 쉬는시간/수업끝나고 코드 보고 다시 작성 ??
+		2. 검색 = 구글링
+		3. [활용] 코테
+			    ( 백준 : https://www.acmicpc.net/ )
+			    ( 프로그래머스 : https://school.programmers.co.kr/learn/challenges )
+		4. [기초]  COS Pro 1급
+
+    - 수업 커리큘럼 -
+    1일차 : 파이썬 문법 [ = 구글링 ]
+    2일차 : 선형리스트 , 연결리스트 등
+    3일차 : 스택 , 큐
+    4일차 : 이진트리 , 그래프
+    5일차 : 재귀
+    6일차 : 정렬
+    7일차 : 검색
+    8일차 : 동적계획법
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
