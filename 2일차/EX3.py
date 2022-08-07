@@ -73,7 +73,7 @@ def node_print() :
         print( current.data , end = ' ')       #
     print( )
 
-#6. 중간 데이터 삽입
+#6. 중간 데이터 삽입 [ 2번 위치에 하하 추가 ]
 insertnode = Node()
 insertnode.data = '하하'
                         # 현재 : 유재석 - 강호동 - 신동엽 - 김희철
@@ -81,6 +81,27 @@ insertnode.link = node1.link #  하하.링크 ---> 유재석(강호동)
 node1.link = insertnode # 유재석(강호동) ---> 하하
                         # 유재석  -> 하하 -> 강호동 -> 신동엽 -> 김희철
 node_print()
+
+#7. 데이터 삭제 [ 하하 삭제 ]
+# 유재석  -> 하하 -> 강호동 -> 신동엽 -> 김희철
+node1.link = insertnode.link
+del( insertnode )
+node_print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
