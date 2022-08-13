@@ -15,8 +15,18 @@
 
 """
 # 1. 데이터 추가  함수
-def enQueue() :
-    return
+def enQueue( train , stationNo ) :
+    rear = -1 # 입구 인덱스
+    if stationNo+1 == 5 : # 마지막 역 이면 첫번째 역으로 이동
+        stationNo = -1
+    # 해당 역의 입구 인덱스 찾기
+    for i in 호선2[ stationNo+1 ] :
+        if i != None :      # 만약에 None 아니면[전차존재]
+            rear += 1       # 입구 인덱스 1 증가
+    # 해당 입구 인덱스에 데이터 추가
+    rear += 1
+    호선2[stationNo+1][rear] = train # 해당역 다음역에 데이터 추가
+
 # 2. 데이터 삭제 함수
 def deQueue( stationNo ) :
     front = -1      # 출구 인덱스
@@ -33,7 +43,9 @@ def deQueue( stationNo ) :
     for i in range( front+1 , rear+1 ) :
         호선2[stationNo][i-1] = 호선2[stationNo] [i]
         호선2[stationNo][i] = None
-    return
+    # 삭제된 데이터를 다음역에 추가
+    enQueue( train , stationNo )
+
 # 3. 큐 상태 함수 [ # 현재 전차들의 위치 출력  ]
 def printQueue( ) :
     for i in  range( 0 , len(호선2) , 1 ) :
