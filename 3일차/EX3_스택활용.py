@@ -12,7 +12,6 @@ def push( data ) :
     top += 1
     stack[top]  = data
     print('안내) 재고상태 : ' , stack )
-
 # 2. pop 함수 : 데이터 삭제
 def pop( ) :
     global top
@@ -39,14 +38,12 @@ def isStackFull() :
         return True         # 빈 자리가 없다 .
     else:
         return False        # 빈 자리가 있다 .
-
 #  5. isStackEmpty 함수 : 스택이  모두 비어있는 체크
 def isStackEmpty() :
     if top == -1 :          # 만약에 top위치가 -1이면 재고 없다
         return True         # 재고가 모두 없다.
     else:
         return False            # 재고가 1개이상이다.
-
 # 6. 프로그램 시작
 while True : # 무한루프[ 종료조건 : 4 입력했을때 ]
     select = int(input('1.재고추가 2.구매 3.재고확인 4.종료 중 선택 : '))
