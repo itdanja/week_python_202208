@@ -27,7 +27,11 @@ def pop( ) :
     return
 # 3. peek 함수  : top 위치 확인
 def peek() :
-
+    if isStackEmpty() :
+        print("안내) 재고가 모두 비어 있습니다.")
+        return
+    print('안내) 재고상태 : ' , stack )
+    print('안내) top제품 : ' , stack[top] )
     return
 # 4. isStackFull  함수  :  스택내 남아있는 자리 체크
 def isStackFull() :
