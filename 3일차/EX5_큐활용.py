@@ -49,10 +49,15 @@ def isQueueEmpty() :
     return
 # 5. peek() :  front 위치 함수
 def peek() :
+    if isQueueEmpty() :
+        print('안내) 다음 대기 인원이 없습니다.')
+        return
+    print(' 곧 입장할 고객 : ' , queue[front+1] )
     return
 
 #6.프로그램 실행
 while True :
+    peek()
     select = int(input('1.대기등록 2.입장 3.종료 선택 : ') )
     if select == 1 :
         print('안내) 등록 ')
