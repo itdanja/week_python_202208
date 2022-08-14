@@ -67,7 +67,7 @@ def postorder( node ) :
 
 # 전위순회함수 실행
 print()
-print(' 전위 순회 : ' , end = ' ')
+print('전위 순회 : ' , end = ' ')
 preodrder( node1 )
 print( 'end')
 # 중위순회함수 실행
