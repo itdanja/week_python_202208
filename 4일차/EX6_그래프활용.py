@@ -122,26 +122,25 @@ def find( g , location ) :
         return False
 
 # 결과 : 거리 계산
-index = 0 # 거리 순서
-while( len(newary) > G1.size -1 ) : # 지역의 개수가 마지막 지역까지 반복
-    start = newary[index][1]     # 출발지
-    end = newary[index][2]      # 도착지
-    saveTime = newary[index][0] # 걸린시간
+index = 0   # 거리 순서
+while( len(newary) > 6-1 ) : # 간선의 개수가 마지막 지역 까지 반복
+    start = newary[index][1]        # 출발지
+    end = newary[index][2]          # 도착지
+    saveCost = newary[index][0]     # 걸리는 시간
 
-    G1.graph[start][end] = 0        #
+    G1.graph[start][end] = 0        # 초기값 설정
     G1.graph[end][start] = 0
 
     startYN = find( G1 , start )
     endYN = find( G1 , end )
 
-    if startYN and endYN : # 방문 했으면
-        del( newary[index] )
-    else:
-        G1.graph[start][end] = saveTime
-        G1.graph[end][start] = saveTime
+    if startYN and endYN :
+        del ( newary[index] )
+    else :
+        G1.graph[start][end] = saveCost
+        G1.graph[end][start] = saveCost
         index += 1
-
-print( ' 춘천 --> 부산까지의 최단 거리 : '  )
+print(" 춘천 ---> 부산까지의 최단 거리 ")
 Graph_print( G1 )
 
 
