@@ -22,6 +22,7 @@
 """
 import random
 
+# 순차검색 버전
 def solution( answerlist ) :
     counter = [ 0 , 0 , 0 ]         # 학생들 맞힌 개수를 저장하는 배열[리스트]
     size = len(answerlist)      # 문제 개수
@@ -39,6 +40,12 @@ def solution( answerlist ) :
     for i in range( 3 ) :
         if counter[i] == best :     # i번째 학생의 맞춘 개수와 가장 많이 맞춘 수 같으면
             result.append( i+1 )        # 1등에 추가
+    return result
+
+# 이진검색 버전
+def solution2( answerlist ) :
+    # 구현하기
+    result = [ ]
     return result
 
 answerlist = [ random.randint(1,5) for _ in range(10) ] # 1. 정답지
