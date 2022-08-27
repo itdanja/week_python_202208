@@ -27,14 +27,14 @@ print('제품목록 : ' , dataAry )
 print('판매목록 : ' , sellAry )
 print('판매된 제품목록(중복제거) : ' , sellproduct )
 
-for p in sellproduct :
-    count , pos = 0 , 0
-    while pos != -1 :
-        pos = binSearch( sellAry , p )
-        if pos != -1 :
-            count += 1
-            del( sellAry[pos] )
-    sellcount.append( ( p , count ) )
+for p in sellproduct :                              # 판매된제품목록에서 판매제품 반복문
+    count , pos = 0 , 0                             # 판매개수 , 검색위치
+    while pos != -1 :                               # 검색 결과가 없을때 반복
+        pos = binSearch( sellAry , p )      # 판매목록 , 제품명
+        if pos != -1 :                                  # 판매목록에서 제품명을 찾았으면
+            count += 1                                  # 판매 개수 증가
+            del( sellAry[pos] )                     # 판매된제품목록 제거
+    sellcount.append( ( p , count ) )       # 제품별 판매수량에 추가
 
 print('제품별 판매수량 : ' , sellcount )
 
