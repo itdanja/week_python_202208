@@ -76,7 +76,6 @@ def solution() :
         print("------------ 메모이제이션 출력 ------------")
         printMaze(memo)
 
-
 ROW , COL = 5 , 5 # 미로 칸수
 goldMaze = [
         [ 1 , 4 , 4 , 2 , 2],
